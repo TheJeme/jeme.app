@@ -1,40 +1,122 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Jeme</title>
-		<meta name="description" content="" />
-		<meta name="keywords" content="Jeme" />
-		<meta og:title="Jeme" />
-		<meta og:description="" />
-		<meta og:image="assets/favicon.png" />
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/png" href="assets/favicon.png" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
-					<header id="header">
-						<h1>Jeme</h1>
-						<p>Programming &nbsp;&bull;&nbsp; Networking &nbsp;&bull;&nbsp; Gaming</p>
-						<nav>
-							<ul>
-								<li><a target="_blank" href="https://github.com/TheJeme" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								<li><a target="_blank" href="https://ailurus.jeme.app/profile/Jeme" class="icon solid fa-database"><span class="label">Ailurus</span></a></li>
-								<li><a target="_blank" href="https://steamcommunity.com/id/thejeme" class="icon brands fa-steam"><span class="label">Steam</span></a></li>
-							</ul>
-						</nav>
-					</header>
-			</div>
-		</div>
-		<script>
-			window.onload = function() { document.body.classList.remove('is-preload'); }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
-	</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeme</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Building the future, one commit at a time.">
+    <meta name="keywords" content="software developer, programmer, coding, jeme">
+    <meta name="author" content="Jeme">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Jeme">
+    <meta property="og:description" content="Building the future, one commit at a time.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jeme.app">
+    <meta property="og:image" content="https://jeme.app/assets/favicon.png">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
+    <meta property="og:site_name" content="Jeme">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jeme">
+    <meta name="twitter:description" content="Building the future, one commit at a time.">
+    <meta name="twitter:image" content="https://jeme.app/assets/favicon.png">
+    <meta name="twitter:creator" content="@TheJeme">
+    
+    <!-- Additional Meta Tags -->
+    <meta name="theme-color" content="#00ff41">
+    <meta name="msapplication-TileColor" content="#0a0a0a">
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Jeme">
+    
+    <!-- Favicon and Icons -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/favicon.png">
+    <link rel="canonical" href="https://jeme.app">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="stars"></div>
+        <div class="particles"></div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Terminal Window -->
+        <div class="terminal">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <span class="btn close"></span>
+                    <span class="btn minimize"></span>
+                    <span class="btn maximize"></span>
+                </div>
+                <div class="terminal-title">jeme@developer:~$</div>
+            </div>
+            <div class="terminal-body">
+                <div class="terminal-line">
+                    <span class="prompt">$</span>
+                    <span class="command">whoami</span>
+                </div>
+                <div class="terminal-output">Jeme</div>
+                
+
+                <div class="terminal-line">
+                    <span class="prompt">$</span>
+                    <span class="command">ls -la /</span>
+                </div>
+                <div class="terminal-output">
+                    <div class="project-links">
+                        <a href="https://github.com/TheJeme" target="_blank" class="project-link">
+                            <span class="icon">📁</span> Github
+                        </a>
+                        <a href="https://ailurus.jeme.app/profile/Jeme" target="_blank" class="project-link">
+                            <span class="icon">🗄️</span> Ailurus
+                        </a>
+                        <a href="https://steamcommunity.com/id/thejeme" target="_blank" class="project-link">
+                            <span class="icon">🎮</span> Steam
+                        </a>
+                    </div>
+                </div>
+
+                <div class="terminal-line">
+                    <span class="prompt">$</span>
+                    <span class="command">echo "Building the future, one commit at a time..."</span>
+                </div>
+                <div class="terminal-output">Building the future, one commit at a time...</div>
+
+                <div class="terminal-line active">
+                    <span class="prompt">$</span>
+                    <span class="cursor">█</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Floating Code Elements -->
+        <div class="floating-code">
+            <div class="code-snippet">&lt;/&gt;</div>
+            <div class="code-snippet">{ }</div>
+            <div class="code-snippet">function()</div>
+            <div class="code-snippet">const</div>
+            <div class="code-snippet">import</div>
+        </div>
+
+        <!-- Matrix Rain Effect -->
+        <canvas id="matrix" class="matrix-rain"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
