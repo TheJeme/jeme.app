@@ -209,7 +209,7 @@ body {
 .project-link {
     color: #00ff41;
     text-decoration: none;
-    padding: 8px 12px;
+    padding: 8px;
     border: 1px solid transparent;
     border-radius: 4px;
     transition: all 0.3s ease;
