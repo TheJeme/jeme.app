@@ -32,7 +32,7 @@
     <meta name="twitter:creator" content="@TheJeme">
     
     <!-- Additional Meta Tags -->
-    <meta name="theme-color" content="#00ff41">
+    <meta name="theme-color" content="#090d0b">
     <meta name="msapplication-TileColor" content="#0a0a0a">
     <meta name="msapplication-config" content="browserconfig.xml">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -48,15 +48,15 @@
 </head>
 <body>
     <!-- Animated Background -->
-    <div class="bg-animation">
+    <div class="bg-animation" aria-hidden="true">
         <div class="stars"></div>
         <div class="particles"></div>
     </div>
 
     <!-- Main Content -->
-    <div class="container">
+    <main class="container">
         <!-- Terminal Window -->
-        <div class="terminal">
+        <section class="terminal" aria-label="Jeme's terminal profile">
             <div class="terminal-header">
                 <div class="terminal-buttons">
                     <span class="btn close"></span>
@@ -79,13 +79,13 @@
                 </div>
                 <div class="terminal-output">
                     <div class="project-links">
-                        <a href="https://github.com/thejeme" target="_blank" class="project-link">
+                        <a href="https://github.com/thejeme" target="_blank" rel="noreferrer" class="project-link">
                             <span class="icon">📁</span> GitHub
                         </a>
-                        <a href="https://ailurus.jeme.app/profile/Jeme" target="_blank" class="project-link">
+                        <a href="https://ailurus.jeme.app/profile/Jeme" target="_blank" rel="noreferrer" class="project-link">
                             <span class="icon">🗄️</span> Ailurus
                         </a>
-                        <a href="https://steamcommunity.com/id/thejeme" target="_blank" class="project-link">
+                        <a href="https://steamcommunity.com/id/thejeme" target="_blank" rel="noreferrer" class="project-link">
                             <span class="icon">🎮</span> Steam
                         </a>
                     </div>
@@ -102,10 +102,10 @@
                     <span class="cursor">█</span>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Floating Code Elements -->
-        <div class="floating-code">
+        <div class="floating-code" aria-hidden="true">
             <div class="code-snippet">&lt;/&gt;</div>
             <div class="code-snippet">{ }</div>
             <div class="code-snippet">function()</div>
@@ -114,8 +114,8 @@
         </div>
 
         <!-- Matrix Rain Effect -->
-        <canvas id="matrix" class="matrix-rain"></canvas>
-    </div>
+        <canvas id="matrix" class="matrix-rain" aria-hidden="true"></canvas>
+    </main>
 
     <script src="script.js"></script>
 </body>
